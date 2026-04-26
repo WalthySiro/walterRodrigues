@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfólio - Walter Rodrigues</title>
+
+<!-- Tailwind -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!-- Config animações -->
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      animation: {
+        fade: "fadeIn 0.8s ease-in-out",
+      },
+      keyframes: {
+        fadeIn: {
+          "0%": { opacity: 0, transform: "translateY(20px)" },
+          "100%": { opacity: 1, transform: "translateY(0)" },
+        },
+      },
+    },
+  },
+}
+</script>
+
+<!-- Fonte -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+<!-- Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+
+</head>
+
+<body class="bg-slate-100 text-slate-800 font-[Inter]">
+
+<!-- Container principal -->
+<div class="flex flex-col md:flex-row min-h-screen">
+
+<!-- ===== SIDEBAR ===== -->
+<aside class="w-full md:w-1/4 bg-gradient-to-br from-blue-400 via-blue-500 to-indigo-600 text-white p-8 flex flex-col items-center animate-fade">
+
+  <h1 class="text-3xl font-bold text-center">
+    Walter Rodrigues
+  </h1>
+
+  <p class="text-center mt-2 text-sm opacity-90">
+    Suporte TI • Web Designer
+  </p>
+
+  <img src="imagem/perfil.png"
+       class="w-32 h-32 rounded-full mt-6 shadow-2xl border-4 border-white object-cover">
+
+  <!-- Botão visível apenas no mobile -->
+  <button id="menuBtn"
+    class="mt-6 bg-white text-blue-600 px-4 py-2 rounded-lg shadow md:hidden">
+    ☰ Menu
+  </button>
+
+  <!-- Menu -->
+  <!-- hidden no mobile / visível no desktop -->
+  <ul id="menu"
+  class="mt-6 space-y-3 w-full hidden md:block">
+
+  <!-- ITEM -->
+  <li class="group bg-white text-gray-700 p-3 rounded cursor-pointer transition hover:bg-gray-100">
+
+    <a href="#index" class="flex justify-between items-center">
+
+      <!-- Título -->
+      <span class="font-semibold">Sobre</span>
+
+      <!-- Ícone + com rotação -->
+      <span class="transform transition duration-300 group-hover:rotate-90 text-blue-500">
+        +
+      </span>
+    </a>
+
+    <!-- Descrição escondida -->
+    <p class="text-sm text-gray-500 mt-2 max-h-0 overflow-hidden transition-all duration-300 group-hover:max-h-20">
+      Resumo profissional e objetivo
+    </p>
+
+  </li>
+
+  <!-- ITEM -->
+  <li class="group bg-white text-gray-700 p-3 rounded cursor-pointer transition hover:bg-gray-100">
+
+    <a href="#qualificacao" class="flex justify-between items-center">
+      <span class="font-semibold">Qualificações</span>
+      <span class="transform transition duration-300 group-hover:rotate-45 text-blue-500">+</span>
+    </a>
+
+    <p class="text-sm text-gray-500 mt-2 max-h-0 overflow-hidden transition-all duration-300 group-hover:max-h-20">
+      Formação e cursos
+    </p>
+
+  </li>
+
+  <!-- ITEM -->
+  <li class="group bg-white text-gray-700 p-3 rounded cursor-pointer transition hover:bg-gray-100">
+
+    <a href="#experiencia" class="flex justify-between items-center">
+      <span class="font-semibold">Experiência</span>
+      <span class="transform transition duration-300 group-hover:rotate-45 text-blue-500">+</span>
+    </a>
+
+    <p class="text-sm text-gray-500 mt-2 max-h-0 overflow-hidden transition-all duration-300 group-hover:max-h-20">
+      Histórico profissional
+    </p>
+
+  </li>
+
+  <!-- ITEM -->
+  <li class="group bg-white text-gray-700 p-3 rounded cursor-pointer transition hover:bg-gray-100">
+
+    <a href="#contato" class="flex justify-between items-center">
+      <span class="font-semibold">Contato</span>
+      <span class="transform transition duration-300 group-hover:rotate-45 text-blue-500">+</span>
+    </a>
+
+    <p class="text-sm text-gray-500 mt-2 max-h-0 overflow-hidden transition-all duration-300 group-hover:max-h-20">
+      Fale comigo
+    </p>
+
+  </li>
+
+</ul>
+
+</aside>
+
+<!-- ===== CONTEÚDO ===== -->
+<main class="w-full md:w-3/4 p-6 space-y-10">
+ 
+
+<!-- SOBRE -->
+<section id="index" class="bg-white p-6  rounded-2xl shadow-md hover:shadow-2xl transition animate-fade">
+  <h2 class="text-2xl font-semibold mb-4">Descrição pessoal</h2>  
+  <p class="leading-relaxed">
+     <p>Atuo há mais de três anos como Suporte em toda a área de TI de uma empresa de eventos com um parque de cerca de 50 máquinas (funcionários), que abrange desde setor Financeiro e RH á setor de Design e laboratório fotográfico, com distinção de rede e restrições de acessos. Neste tempo adquiri domínio em Suporte Técnico, montagem/manutenção e configuração de computadores desktop e notebook, instalação de software, pacote Office e configuração de e-mail corporativo, infraestrutura de redes e cabeamento, compartilhamento de arquivo e impressora com níveis de acesso, conhecimento de HTML5, CSS, Bootstrap, C# e SQL Server.</p> 
+     <p>Busco ampliar meus conhecimentos e minhas habilidades na área da Tecnólogia, para que eu possa me desenvolver como um profissional reconhecido pelo meu trabalho e determinação, de modo a contribuir para o crescimento qualitativo da empresa e da equipe a qual eu venha integrar.</p>
+  </p>
+</section>
+
+<!-- QUALIFICAÇÃO -->
+<section id="qualificacao" class="bg-white p-6 rounded-2xl shadow-md hover:shadow-2xl transition animate-fade">
+  <h2 class="text-2xl font-semibold mb-4">Qualificações</h2>
+  
+  <div class="border-l-4 border-blue-500 pl-4">
+    <h3 class="text-lg font-semibold text-blue-600">Superior</h3>
+    <p>Análise e Desenvolvimento de Sistemas</p>
+  </div>
+  <div class="border-l-4 border-blue-500 pl-4">
+    <h3 class="text-lg font-semibold text-blue-600">Técnico</h3>
+    <p>Tecnico em informatica</p>
+  </div>
+
+</section>
+
+<!-- EXPERIÊNCIA -->
+<section id="experiencia" class="bg-white p-6 rounded-2xl shadow-md hover:shadow-2xl transition animate-fade">
+  <h2 class="text-2xl font-semibold mb-4">Experiência</h2>
+
+  <div class="border-l-4 border-blue-500 pl-4">
+    <h3 class="text-lg font-semibold text-blue-600">Suporte TI</h3>
+    <p>Atuação com redes, manutenção e suporte.</p>
+  </div>
+  <div class="border-l-4 border-blue-500 pl-4">
+    <h3 class="text-lg font-semibold text-blue-600">Suporte TI</h3>
+    <p>Atuação com redes, manutenção e suporte.</p>
+  </div>
+  <div class="border-l-4 border-blue-500 pl-4">
+    <h3 class="text-lg font-semibold text-blue-600">Suporte TI</h3>
+    <p>Atuação com redes, manutenção e suporte.</p>
+  </div>
+
+</section>
+
+<!-- CONTATO -->
+<section id="contato" class="bg-white p-6 rounded-2xl shadow-md hover:shadow-2xl transition animate-fade">
+  <h2 class="text-2xl font-semibold mb-4">Contato</h2>
+
+  <div class="flex justify-center gap-4">
+    <a class="bg-black text-white p-3 rounded-full hover:scale-110 transition"><i class="fab fa-github"></i></a>
+    <a class="bg-green-500 text-white p-3 rounded-full hover:scale-110 transition"><i class="fab fa-whatsapp"></i></a>
+    <a class="bg-blue-600 text-white p-3 rounded-full hover:scale-110 transition"><i class="fab fa-linkedin"></i></a>
+  </div>
+
+  <form class="mt-6 space-y-3">
+    <input class="w-full p-2 border rounded" placeholder="Nome">
+    <input class="w-full p-2 border rounded" placeholder="E-mail">
+    <textarea class="w-full p-2 border rounded" placeholder="Mensagem"></textarea>
+    <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">Enviar</button>
+  </form>
+
+</section>
+
+</main>
+</div>
+
+<!-- ===== JAVASCRIPT ===== -->
+<script>
+
+// Toggle menu (mobile)
+const menuBtn = document.getElementById('menuBtn');
+const menu = document.getElementById('menu');
+
+menuBtn.onclick = () => {
+  menu.classList.toggle('hidden');
+};
+
+// Garante comportamento correto ao redimensionar
+window.addEventListener("resize", () => {
+  if (window.innerWidth >= 768) {
+    menu.classList.remove("hidden");
+  } else {
+    menu.classList.add("hidden");
+  }
+});
+
+// Scroll suave
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+  link.addEventListener('click', e => {
+    e.preventDefault();
+    document.querySelector(link.getAttribute('href')).scrollIntoView({behavior:'smooth'});
+  });
+});
+
+</script>
+
+</body>
+</html>
