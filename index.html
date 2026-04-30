@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Walter Rodrigues | Analista de Suporte</title>
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Fonte -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- Ícones -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+
+<body class="bg-slate-100 font-[Inter] text-slate-800">
+
+<!-- ================= HEADER MOBILE ================= -->
+<header class="md:hidden flex items-center justify-between p-4 bg-slate-900 text-white">
+
+   <!-- Foto + Nome no header mobile -->
+  <div class="flex items-center gap-3">
+    <img src="imagem/perfil.png" alt="Walter Rodrigues"
+         class="w-9 h-9 rounded-full object-cover ring-2 ring-brand-400">
+    <span class="font-semibold text-white text-sm">Walter Rodrigues</span>
+  </div>
+
+  <!-- Botão hamburguer -->
+  <button id="menuBtn" class="text-xl">
+    <i class="fas fa-bars"></i>
+  </button>
+
+</header>
+
+<div class="flex">
+
+<!-- ================= SIDEBAR ================= -->
+<aside id="sidebar"
+  class="fixed top-0 left-0 h-full w-72
+         bg-slate-900 text-white p-6 border-slate-700/50
+         -translate-x-full z-50
+         md:relative md:translate-x-0 md:sticky md:top-0
+         md:h-screen md:flex-shrink-0 md:overflow-y-auto
+         flex flex-col p-6 gap-6">
+<!-- <aside id="sidebar"
+class="fixed top-0 left-0 h-full 
+w-2/3 md:w-2/5 lg:w-1/4 bg-slate-900 text-white p-6
+transform -translate-x-full md:translate-x-0 transition duration-300 z-50"> -->
+
+  <!-- FOTO (sempre visível) -->
+  <div class="flex flex-col items-center">
+    <img src="imagem/perfil.png" alt="Walter Rodrigues"
+         class="w-24 h-24 rounded-full border-4 border-white object-cover">
+
+    <h1 class="mt-3 text-lg font-bold text-center">Walter Rodrigues</h1>
+    <p class="text-sm text-gray-400 text-center">Analista de Suporte Jr/Pleno</p>
+  </div>
+
+  <!-- MENU -->
+  <nav class="mt-6">
+    <ul class="space-y-3 text-center md:text-left">
+
+      <li><a href="#sobre" class="block hover:text-blue-400">Sobre</a></li>
+      <li><a href="#skills" class="block hover:text-blue-400">Competências</a></li>
+      <li><a href="#experiencia" class="block hover:text-blue-400">Experiência</a></li>
+      <li><a href="#contato" class="block hover:text-blue-400">Contato</a></li>
+
+    </ul>
+  </nav>
+
+  <!-- REDES SOCIAIS -->
+  <div class="flex justify-center gap-4 mt-6 text-lg">
+    <a href="#" class="hover:text-gray-400"><i class="fab fa-github"></i></a>
+    <a href="#" class="hover:text-blue-400"><i class="fab fa-linkedin"></i></a>
+    <a href="#" class="hover:text-green-400"><i class="fab fa-whatsapp"></i></a>
+  </div>
+
+  <!-- DOWNLOAD CV -->
+  <a href="curriculo.pdf" download
+     class="block text-center mt-4 border border-white py-2 rounded hover:bg-white hover:text-black transition">
+    📄 Baixar Currículo
+  </a>
+
+</aside>
+
+<!-- OVERLAY (fecha menu no mobile) -->
+<div id="overlay"
+class="fixed inset-0 bg-black/50 hidden md:hidden"></div>
+
+<!-- ================= CONTEÚDO ================= -->
+<main class="w-full  p-6 space-y-12">
+
+<!-- SOBRE -->
+<section id="sobre">
+  <h2 class="text-2xl font-bold mb-4">Sobre mim</h2>
+
+  <p class="leading-relaxed text-gray-700">
+    Profissional com mais de três anos de experiência em suporte técnico, atuando em ambientes corporativos com múltiplos usuários.
+    Experiência em manutenção de computadores, redes, configuração de sistemas e atendimento a usuários.
+  </p>
+
+  <p class="mt-3 text-gray-700">
+    Busco oportunidades como Analista de Suporte Jr/Pleno, onde possa contribuir com a estabilidade e eficiência dos ambientes de TI.
+  </p>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <h2 class="text-2xl font-bold mb-4">Competências</h2>
+
+  <div class="grid sm:grid-cols-2 gap-4">
+
+    <!-- Senior -->
+    <div class="bg-white p-4 rounded shadow flex justify-between">
+      <span>Suporte Técnico</span>
+      <span class="text-green-600">Senior 🟢</span>
+    </div>
+
+    <div class="bg-white p-4 rounded shadow flex justify-between">
+      <span>Manutenção</span>
+      <span class="text-green-600">Senior 🟢</span>
+    </div>
+
+    <!-- Pleno -->
+    <div class="bg-white p-4 rounded shadow flex justify-between">
+      <span>Redes</span>
+      <span class="text-yellow-500">Pleno 🟡</span>
+    </div>
+
+    <!-- Junior -->
+    <div class="bg-white p-4 rounded shadow flex justify-between">
+      <span>HTML / CSS</span>
+      <span class="text-blue-500">Júnior 🔵</span>
+    </div>
+    <!-- Pleno -->
+    <div class="bg-white p-4 rounded shadow flex justify-between">
+      <span>Redes</span>
+      <span class="text-yellow-500">Pleno 🟡</span>
+    </div>
+
+    <!-- Junior -->
+    <div class="bg-white p-4 rounded shadow flex justify-between">
+      <span>HTML / CSS</span>
+      <span class="text-blue-500">Júnior 🔵</span>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIÊNCIA -->
+<section id="experiencia">
+  <h2 class="text-2xl font-bold mb-4">Experiência</h2>
+
+  <div class="bg-white p-5 rounded shadow">
+    <h3 class="font-semibold text-lg">Analista de Suporte</h3>
+    <p class="text-sm text-gray-500">Empresa de Eventos • 2022 - Atual</p>
+
+    <ul class="mt-3 list-disc list-inside text-gray-700 space-y-1">
+      <li>Suporte técnico a usuários</li>
+      <li>Manutenção de computadores e notebooks</li>
+      <li>Configuração de redes e sistemas</li>
+      <li>Resolução de incidentes e chamados</li>
+    </ul>
+  </div>
+</section>
+
+<!-- CONTATO -->
+<section id="contato">
+  <h2 class="text-2xl font-bold mb-4">Contato</h2>
+
+  <form class="bg-white p-5 rounded shadow max-w-md space-y-4">
+
+    <!-- Nome -->
+    <div>
+      <label class="block text-sm font-medium">Nome</label>
+      <input type="text" required
+             class="w-full p-2 border rounded mt-1 focus:ring-2 focus:ring-blue-500">
+    </div>
+
+    <!-- Email -->
+    <div>
+      <label class="block text-sm font-medium">E-mail</label>
+      <input type="email" required
+             class="w-full p-2 border rounded mt-1 focus:ring-2 focus:ring-blue-500">
+    </div>
+
+    <!-- Mensagem -->
+    <div>
+      <label class="block text-sm font-medium">Mensagem</label>
+      <textarea required
+                class="w-full p-2 border rounded mt-1 focus:ring-2 focus:ring-blue-500"></textarea>
+    </div>
+
+    <!-- Botão -->
+    <button type="submit"
+            class="bg-slate-900 text-white px-4 py-2 rounded hover:bg-black transition">
+      Enviar mensagem
+    </button>
+
+  </form>
+</section>
+
+</main>
+</div>
+
+<!-- ================= JS ================= -->
+<script>
+
+const menuBtn = document.getElementById("menuBtn");
+const sidebar = document.getElementById("sidebar");
+const overlay = document.getElementById("overlay");
+
+// Abrir menu
+menuBtn.onclick = () => {
+  sidebar.classList.remove("-translate-x-full");
+  overlay.classList.remove("hidden");
+};
+
+// Fechar menu clicando fora
+overlay.onclick = () => {
+  sidebar.classList.add("-translate-x-full");
+  overlay.classList.add("hidden");
+};
+
+// Fechar ao clicar no link (UX importante)
+document.querySelectorAll("nav a").forEach(link => {
+  link.addEventListener("click", () => {
+    sidebar.classList.add("-translate-x-full");
+    overlay.classList.add("hidden");
+  });
+});
+
+</script>
+
+</body>
+</html>
